@@ -1,0 +1,108 @@
+// Extensions
+%heading {
+  font-weight: normal;
+  font-family: $font-display;
+  letter-spacing: 3px;
+}
+
+// Layout
+.content {
+  padding: 6rem;
+}
+
+// Headings
+.heading-2 {
+  font-size: 6rem;
+  color: $color-quaternary;
+  @extend %heading;
+}
+
+.heading-3 {
+  font-size: 4rem;
+  color: $color-secondary;
+  @extend %heading;
+}
+
+.heading-4 {
+  font-size: 4rem;
+  color: $color-primary;
+  @extend %heading;
+}
+
+// Buttons
+.btn {
+  font-size: 2rem;
+  text-decoration: none;
+  color: $color-white;
+  display: inline-block;
+  padding: 1.3rem 2.6rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba($color-black, .14);
+  transition: all 200ms;
+  outline: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: .5;
+  }
+
+  // &:focus,
+  // &:active {
+  //   transform: translateY(2px);
+  // }
+
+  &--primary {
+    background-color: $color-primary;
+    &:hover {
+      background-color: darken($color-primary, 5%);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    &:hover {
+      background-color: darken($color-secondary, 5%);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+    }
+  }
+}
+
+// Tables
+.numeric-cell {
+  text-align: right;
+}
+.textual-cell {
+  text-align: left;
+}
+
+// Utils
+.u-margin-bottom-huge {
+  margin-bottom: 8rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 6rem;
+  }
+}
+.u-margin-bottom-large {
+  margin-bottom: 6rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 4rem;
+  }
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 2rem;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+.u-text-align-center {
+  text-align: center;
+}
+

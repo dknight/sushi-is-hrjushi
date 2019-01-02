@@ -1,0 +1,42 @@
+// ------------ VARIABLES ---------------------------------------------
+$common-border-radius: 10px;
+
+// ------------ COLORS ------------------------------------------------
+$color-interior-bg: #fea;
+$color-header-panel-bg:  #202125;
+
+$color-primary: #e0115f;
+$color-secondary: #0c6c8c;
+$color-tertiary: #60e011;
+$color-quaternary: #e01f11;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-light-3: #e1e1e1;
+
+$color-white: #fff;
+$color-black: #000;
+
+// TODO: change
+$color-grey-dark-1: #54483A;
+// $color-grey-dark-2: #6D5D4B;
+
+// --------- FONT VARIABLES ------------------------------------------
+$font-common: 'Open Sans', sans-serif;
+$font-display: 'Katana', sans-serif;
+
+// ------------ BREAKPOINTS -------------------------------------------
+$bp-largest: 75em;    // 1200px
+$bp-large:   62.5em;  // 1000px
+$bp-medium:  56.25em; // 900px
+$bp-small:   50em;    // 700px
+$bp-tiny:    37.5em;  // 600px
+$bp-nano:    31.25em; // 500px
+
+@mixin text-outline($color) {
+  text-shadow:
+     -1px -1px 0 $color,
+      1px -1px 0 $color,
+     -1px  1px 0 $color,
+      1px  1px 0 $color;
+}
