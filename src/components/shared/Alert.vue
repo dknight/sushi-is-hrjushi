@@ -94,8 +94,9 @@ export default {
 
   &.active  &__waitress {
     right: 0;
+    
     @media only screen and (max-width: $bp-tiny) {
-      right: -18%;
+      right: -12%;
     }
   }
 
@@ -119,6 +120,7 @@ export default {
 
     display: grid;
     grid-gap: 3rem;
+    grid-template-columns: .8fr;
     grid-template-rows: repeat(3, max-content);
     justify-items: start;
     align-content: center;
