@@ -126,6 +126,7 @@ export default {
     }
     &:active {
       transform: translateY(2px);
+      outline: none;
     }
   }
 }
