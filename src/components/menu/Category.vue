@@ -37,16 +37,16 @@ export default {
 @import '../../assets/sass/global';
 
 .category {
-  padding: 1.5rem;
-  border-radius: $common-border-radius;
-  overflow: hidden;
-  border: 2px solid $color-grey-light-3;
-  position: relative;
-
   &:link,
   &:visited {
     background-color: $color-white;
     text-decoration: none;
+    padding: 1.5rem;
+    border-radius: $common-border-radius;
+    overflow: hidden;
+    border: 2px solid $color-grey-light-3;
+    position: relative;
+    outline: none;
   }
 
   &__photo {
@@ -56,6 +56,13 @@ export default {
     transition: all 300ms;
   }
 
+  &:active,
+  &:focus {
+    border-color: lighten($color-primary, 30%);
+  }
+
+  &:focus &__photo,
+  &:active &__photo,
   &:hover &__photo {
     transform: scale(1.05) translateY(-10px);
   }

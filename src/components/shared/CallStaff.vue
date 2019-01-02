@@ -34,7 +34,7 @@ export default {
     outline: none;
     transition: all 400ms;
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: $color-primary;
     text-decoration: none;

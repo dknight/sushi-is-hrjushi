@@ -54,6 +54,9 @@
 
   &--primary {
     background-color: $color-primary;
+
+    &:focus,
+    &:active,
     &:hover {
       background-color: darken($color-primary, 5%);
       box-shadow: 0 .5rem 1rem rgba($color-black, .3);
@@ -62,6 +65,8 @@
 
   &--secondary {
     background-color: $color-secondary;
+    &:focus,
+    &:active,
     &:hover {
       background-color: darken($color-secondary, 5%);
       box-shadow: 0 .5rem 1rem rgba($color-black, .3);
