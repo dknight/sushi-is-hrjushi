@@ -25,7 +25,7 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+NODE_ENV=production npm run build
 ```
 
 ### Run your tests
