@@ -120,7 +120,7 @@ export default {
 
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: .8fr;
+    grid-template-columns: .9fr;
     grid-template-rows: repeat(3, max-content);
     justify-items: start;
     align-content: center;
