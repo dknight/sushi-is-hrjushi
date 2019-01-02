@@ -115,10 +115,11 @@ export default {
 
   &__image {
     position: relative;
+    width: 20rem;
   }
 
   &__photo {
-    width: 20rem;
+    width: 100%;
     height: auto;
   }
 
