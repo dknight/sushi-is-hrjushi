@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../sass/global";
+@import "../../assets/sass/global";
 
 .header {
   font-size: 1.5rem;

@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 
 .seating-plan {
   background-color: $color-interior-bg;

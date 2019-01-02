@@ -3,7 +3,7 @@
 </template>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 
 .for-adults {
   position: absolute;

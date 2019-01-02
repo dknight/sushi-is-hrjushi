@@ -89,7 +89,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 
 .order {
   display: grid;

@@ -47,8 +47,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/global';
-@import '../../sass/base';
+@import '../../assets/sass/global';
+@import '../../assets/sass/base';
 
 .menu-categories {
   display: grid;

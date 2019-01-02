@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './sass/global';
+@import './assets/sass/global';
 
 // Global reset
 // Remove focus from buttons

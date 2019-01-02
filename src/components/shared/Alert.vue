@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 .alert {
   width: 100vw;
   height: 100vh;

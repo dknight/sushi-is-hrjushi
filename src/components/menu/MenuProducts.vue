@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 
 .menu-products {
   display: grid;

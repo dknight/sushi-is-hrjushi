@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss">
-@import '../../sass/global';
+@import '../../assets/sass/global';
 
 .content {
   height: 100%;
