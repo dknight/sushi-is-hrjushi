@@ -1,7 +1,7 @@
 <template>
   <a href="#" @click.prevent="callStuffDialog()" class="call-staff-btn" title="Call staff">
     <svg class="call-staff-btn__icon">
-      <use xlink:href="/img/sprite.svg#icon-bell"></use>
+      <use xlink:href="img/sprite.svg#icon-bell"></use>
     </svg>
     <div class="call-staff-btn__label">Call staff</div>
   </a>
