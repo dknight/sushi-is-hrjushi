@@ -1,5 +1,3 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production'
-    ? '/sushi/'
-    : '/'
+  baseUrl: process.env.NODE_ENV === 'production' ? '/sushi/' : '/'
 };
