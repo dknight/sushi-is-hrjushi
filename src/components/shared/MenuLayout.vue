@@ -23,7 +23,7 @@
     @media only screen and (max-width: $bp-tiny) {
       grid-template-rows: repeat(2, max-content);
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
+      grid-gap: 3rem;
     }
 
     .heading-2 {
@@ -35,5 +35,9 @@
 }
 .menu-navigation {
   justify-self: end;
+
+  @media only screen and (max-width: $bp-tiny) {
+    justify-self: stretch;
+  }
 }
 </style>

@@ -27,17 +27,8 @@ export default {
 @import './assets/sass/global';
 
 // Global reset
-// Remove focus from buttons
-input[type="submit"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border : 0px;
-}
-input[type="submit"]:focus,
-input[type="button"]:focus,
-button {
-  outline : none;
-}
+@include hide-outline();
+
 
 // Hide numbers spinner
 input[type=number]::-webkit-inner-spin-button, 

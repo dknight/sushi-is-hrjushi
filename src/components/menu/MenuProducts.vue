@@ -68,4 +68,12 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   grid-gap: 3rem;
 }
+
+.menu-navigation {
+  @media only screen and (max-width: $bp-tiny) {
+    justify-self: stretch;
+    text-align: center;
+    padding: 2rem 0;
+  }
+}
 </style>

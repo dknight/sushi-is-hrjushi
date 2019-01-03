@@ -102,12 +102,13 @@ export default {
   }
 
   &__btn {
+    @include hide-outline();
     border: 3px solid $color-primary;
     border-radius: $common-border-radius;
     background-color: transparent;
     color: $color-white;
     padding: 1.2rem 2.8rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: inherit;
     font-weight: 700;
     cursor: pointer;

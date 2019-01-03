@@ -33,10 +33,25 @@ $bp-small:   50em;    // 700px
 $bp-tiny:    37.5em;  // 600px
 $bp-nano:    31.25em; // 500px
 
+// Make text outline with color
 @mixin text-outline($color) {
   text-shadow:
      -1px -1px 0 $color,
       1px -1px 0 $color,
      -1px  1px 0 $color,
       1px  1px 0 $color;
+}
+
+// Remove focus from buttons
+@mixin hide-outline() {
+  input[type="submit"]::-moz-focus-inner,
+  input[type="button"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border : 0px;
+  }
+  input[type="submit"]:focus,
+  input[type="button"]:focus,
+  button {
+    outline : none;
+  }
 }

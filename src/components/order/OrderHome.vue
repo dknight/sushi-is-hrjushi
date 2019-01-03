@@ -31,7 +31,7 @@
         </table>
         <a
           href="#"
-          class="btn btn--primary"
+          class="order__to-kitchen btn btn--primary"
           @click.prevent="sendToKitchen()"
           v-if="orderedProducts.length > 0">Send to kitchen</a>
           <p class="order__empty" v-else>Your order is empty</p>
@@ -96,7 +96,6 @@ export default {
   grid-template-rows: repeat(2, max-content);
   grid-gap: 2rem;
   justify-items: end;
-
   padding-bottom: 10rem;
 
   &__photo {
@@ -126,6 +125,14 @@ export default {
   &__total {
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  &__to-kitchen {
+    @media only screen and (max-width: $bp-tiny) {
+      justify-self: stretch;
+      text-align: center;
+      padding: 2rem 0;
+    }
   }
 }
 </style>
