@@ -1,10 +1,7 @@
+import Vue from 'vue';
 import types from '@/store/types';
-import tables from '@/data/tables';
 
 export default  {
-  fetchTables(context) {
-    context.commit(types.FETCH_TABLES, tables);
-  },
   reserveTable(context, id) {
     context.commit(types.RESERVE_TABLE, id);
   },
@@ -15,6 +12,15 @@ export default  {
     context.commit(types.REMOVE_PRODUCT_FROM_ORDER, payload);
   },
   sendToKitchen(context) {
-    context.commit(types.SEND_TO_KITCHEN)
+    context.commit(types.SEND_TO_KITCHEN);
+  },
+  fetchTables(context) {
+    Vue.http.get('tables.json')
+      .then(resp => resp.json())
+      .then(data => {
+        if (data) {
+          context.commit(types.FETCH_TABLES, data.tables);
+        }
+      });
   }
 };
