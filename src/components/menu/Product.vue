@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ForAdults from '../shared/ForAdults.vue';
+import ForAdults from '@/components/shared/ForAdults.vue';
 
 export default {
   data() {
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getPicUrl(id) {
-      return require(`../../assets/img/products/${id}.jpg`);
+      return require(`@/assets/img/products/${id}.jpg`);
     },
     formatProductDescription(s) {
       let retval = s.ingredients.join(', ') + ', ';

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { openAlertHelper } from '../../helpers';
+import { openAlertHelper } from '@/helpers';
 export default {
   methods: {
     callStuffDialog() {

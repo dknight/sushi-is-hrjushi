@@ -41,10 +41,10 @@
 </template>
 
 <script>
-import MenuLayout from '../shared/MenuLayout.vue';
-import types from '../../store/types';
-import products from '../../data/products';
-import { openAlertHelper } from '../../helpers';
+import MenuLayout from '@/components/shared/MenuLayout.vue';
+import types from '@/store/types';
+import products from '@/data/products';
+import { openAlertHelper } from '@/helpers';
 
 export default {
   data() {

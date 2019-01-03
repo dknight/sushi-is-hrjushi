@@ -1,4 +1,4 @@
-import types from './types'
+import types from '@/store/types'
 
 export default {
   [types.GET_ALL_TABLES]: state => state.tables,

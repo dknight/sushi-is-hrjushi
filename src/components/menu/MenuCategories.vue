@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import Category from './Category.vue';
-import products from '../../data/products';
-import MenuLayout from '../shared/MenuLayout.vue';
-import types from '../../store/types';
+import Category from '@/components/menu/Category.vue';
+import products from '@/data/products';
+import MenuLayout from '@/components/shared/MenuLayout.vue';
+import types from '@/store/types';
 
 export default {
   data() {

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import types from '../../store/types'
+import types from '@/store/types'
 
 export default {
   computed: {

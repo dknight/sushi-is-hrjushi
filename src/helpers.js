@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Alert from './components/shared/Alert.vue';
+import Alert from '@/components/shared/Alert.vue';
 
 export const openAlertHelper = function (title, text, props={}, parent='#wrapper') {
   var ComponentClass = Vue.extend(Alert);

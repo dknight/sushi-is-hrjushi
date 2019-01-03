@@ -1,5 +1,5 @@
-import types from './types';
-import tables from '../data/tables';
+import types from '@/store/types';
+import tables from '@/data/tables';
 
 export default  {
   fetchTables(context) {

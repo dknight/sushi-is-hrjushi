@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Header from './components/shared/Header.vue';
-import CallStaff from './components/shared/CallStaff.vue';
+import Header from '@/components/shared/Header.vue';
+import CallStaff from '@/components/shared/CallStaff.vue';
 
 export default {
   components: {

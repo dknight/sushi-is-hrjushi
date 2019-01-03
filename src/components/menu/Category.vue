@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import ForAdults from '../shared/ForAdults.vue';
+import ForAdults from '@/components/shared/ForAdults.vue';
 
 export default {
   methods: {
     getPicUrl(name) {
-      return require(`../../assets/img/categories/${name}.jpg`)
+      return require(`@/assets/img/categories/${name}.jpg`)
     }
   },
   props: {

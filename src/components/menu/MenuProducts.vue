@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import MenuLayout from '../shared/MenuLayout.vue';
-import Product from './Product';
-import products from '../../data/products';
-import types from '../../store/types';
+import MenuLayout from '@/components/shared/MenuLayout.vue';
+import Product from '@/components/menu/Product';
+import products from '@/data/products';
+import types from '@/store/types';
 
 export default {
   data() {
