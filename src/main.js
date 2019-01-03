@@ -6,8 +6,8 @@ import store from './store/store';
 import './filters';
 
 Vue.use(VueResource);
-Vue.http.options.root = '/';
 
+Vue.http.options.root = process.env.BASE_URL;
 Vue.config.productionTip = false;
 
 new Vue({
