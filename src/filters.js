@@ -5,10 +5,18 @@ Vue.filter('capitalize', value => {
 });
 
 Vue.filter('currency', value => {
-  return `${value.toFixed(2)} EUR`;
+  let v = value;
+  if (!v || Number.isNaN(v)) {
+    v = Number(0);
+  }
+  return `${v.toFixed(2)} EUR`;
 });
 
 Vue.filter('formatTime', value => {
+  let v = value;
+  if (!v || Number.isNaN(v)) {
+    return '00:00:00';
+  }
   var h   = Math.floor(value / 3600);
   var m = Math.floor((value - (h * 3600)) / 60);
   var s = value - (h * 3600) - (m * 60);
