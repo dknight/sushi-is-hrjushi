@@ -1,7 +1,8 @@
 import Vue from 'vue';
 
 Vue.filter('capitalize', value => {
-  return value.charAt(0).toUpperCase() + value.substr(1);
+  return value.charAt(0).toUpperCase()
+            + value.substr(1).toLowerCase();
 });
 
 Vue.filter('currency', value => {

@@ -8,7 +8,7 @@ describe('filters.js', () => {
   it('string should be capitalized', () => {
     expect(vm.$options.filters.capitalize('hello')).toBe('Hello');
     expect(vm.$options.filters.capitalize('')).toBe('');
-    expect(vm.$options.filters.capitalize('HELLO')).toBe('HELLO');
+    expect(vm.$options.filters.capitalize('HELLO')).toBe('Hello');
   });
 
   it('should format currency', () => {
